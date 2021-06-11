@@ -1,3 +1,8 @@
+// Variables
+
+$offwhite: #FDFDFD;
+$black: #000000;
+
 // Mixins
 
 @mixin flexbox() {
@@ -10,30 +15,11 @@
 
 // Main code
 
-* {
-	
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	
-}
-
-body {
-	
-	background-color: #2F2F2F;
-	
-	@include flexbox();
-	flex-flow: column nowrap;
-	row-gap: 50px;
-	
-	padding-top: 50px;
-	padding-bottom: 50px;
-	
-}
-
 a {
-
-	color: #FDFDFD;
+	
+	// Typography
+	
+	color: $offwhite;
 	font-size: 1.75em;
 	font-family: 'Courier New', monospace;
 	text-align: center;
@@ -47,11 +33,13 @@ a {
 
 img {
 	
-	border: 2px solid #dddddd;
-	box-shadow: 1px 1px 6px #000000;
+	border: 2px solid $offwhite;
+	box-shadow: 1px 1px 6px $black;
 	
 	max-width: 90%;
+	max-height: 85vh;
     height: auto;
+	
 	margin-left: auto;
 	margin-right: auto;
 	

@@ -1,3 +1,11 @@
+// Variables
+
+$offwhite: #FDFDFD;
+
+$offblack: #2F2F2F;
+$nearblack: #111111;
+$black: #000000;
+
 // Mixins
 
 @mixin flexbox() {
@@ -11,27 +19,6 @@
 }
 
 // Main code
-
-* {
-
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	
-}
-
-body {
-	
-	background-color: #2F2F2F;
-	
-	@include flexbox();
-	flex-flow: column nowrap;
-	row-gap: 50px;
-	
-	padding-top: 50px;
-	padding-bottom: 50px;
-	
-}
 
 main {
 
@@ -54,6 +41,8 @@ footer {
 	
 }
 
+// Typography
+
 p {
 
 	text-align: center;
@@ -64,7 +53,7 @@ p {
 p,
 a {
 	
-	color: #FDFDFD;
+	color: $offwhite;
 	font-size: 1em;
 	font-family: 'Courier New', monospace;
 	
@@ -80,9 +69,10 @@ a {
 	
 	background-size: cover;
 	background-position: top;
+	background-color: $offblack;
 	
-	border: 2px solid #111111;
-	box-shadow: 1px 1px 6px #000000;
+	border: 2px solid $nearblack;
+	box-shadow: 1px 1px 6px $black;
 	filter: grayscale(100%);
 	
 	-webkit-transition: 0.25s;
@@ -93,7 +83,7 @@ a {
 		transform: scale(1.2, 1.2);
 		-webkit-transition: 0.1s;
 		transition: 0.1s;
-		border: 2px solid #dddddd;
+		border: 2px solid $offwhite;
 		filter: grayscale(0%);
 		z-index: 100;
 		

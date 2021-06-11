@@ -1,0 +1,36 @@
+// Variables
+
+$offblack: #2F2F2F;
+
+// Mixins
+
+@mixin flexbox() {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+// Main code
+
+* {
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+body {
+	
+	background-color: $offblack;
+	
+	@include flexbox();
+	flex-flow: column nowrap;
+	row-gap: 50px;
+	
+	padding-top: 50px;
+	padding-bottom: 50px;
+	
+}
