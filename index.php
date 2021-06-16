@@ -13,7 +13,7 @@
 		</main>
 		<footer>
 			<p>Tilewall is created by <a href="https://antoniataylordesign.com/">Antonia Taylor, based off imagedumper created by <a href="https://heckscaper.com/">Emma Essex</a></p>
-			<p>Tilewall is licensed under MIT.</p>
+			<p>Tilewall is licensed under The Unlicense.</p>
 		</footer>
 	</body>
 </html>
