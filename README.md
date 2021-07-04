@@ -8,6 +8,13 @@ Tilewall is originally based off the web application imageviewer created by [Emm
 
 Tilewall works on any web server with PHP. By default, it will look for images in a folder entitled 'images' in the root folder. You can change where it looks for images at the top of the get_images script.
 
+# Planned Features
+
+* Light CSS mode
+* Lightbox functionality
+* Display EXIF data
+* More?
+
 # License
 
 Tilewall is licensed under The Unlicense, with permission of Emma Essex. TL;DR: do what you want, but you are reponsible for your own usage.
