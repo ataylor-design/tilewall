@@ -1,6 +1,10 @@
 // Variables
 
+$offwhite: #FDFDFD;
+
 $offblack: #2F2F2F;
+$nearblack: #111111;
+$black: #000000;
 
 // Mixins
 
@@ -24,13 +28,147 @@ $offblack: #2F2F2F;
 
 body {
 	
-	background-color: $offblack;
-	
 	@include flexbox();
 	flex-flow: column nowrap;
 	row-gap: 50px;
 	
 	padding-top: 50px;
 	padding-bottom: 50px;
+	
+	&.index {
+		
+		main {
+
+			margin-left: auto;
+			margin-right: auto;
+			width: 95%;
+			
+			@include flexbox();
+			flex-flow: row wrap;
+			justify-content: space-between;
+			gap: 10px 10px;
+			
+		}
+
+		footer {
+
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			
+		}
+		
+		p {
+
+			text-align: center;
+			margin-bottom: 5px;
+			
+		}
+
+		p,
+		a {
+			
+			font-size: 1em;
+			font-family: 'Courier New', monospace;
+			
+		}
+
+		.imagebox {
+			
+			position: relative;
+			z-index: 1;
+			
+			width: 200px;
+			height: 200px;
+			
+			background-size: cover;
+			background-position: top;
+			filter: grayscale(100%);
+			
+			-webkit-transition: 0.25s;
+			transition: 0.25s;
+			
+			&:hover {
+			
+				transform: scale(1.2, 1.2);
+				-webkit-transition: 0.1s;
+				transition: 0.1s;
+				filter: grayscale(0%);
+				z-index: 100;
+				
+			}
+			
+		}
+
+	}
+	
+	&.image {
+		
+		a {
+			
+			// Typography
+			
+			
+			font-size: 1.75em;
+			font-family: 'Courier New', monospace;
+			text-align: center;
+			font-weight: bold;
+			
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			
+		}
+
+		img {
+			
+			max-width: 90%;
+			max-height: 85vh;
+			height: auto;
+			
+			margin-left: auto;
+			margin-right: auto;
+			
+		}
+
+	}
+	
+	&.dark-mode {
+		
+		background-color: $offblack;
+		
+		p,
+		a {
+			
+			color: $offwhite;
+			
+		}
+		
+		img {
+			
+			border: 2px solid $offwhite;
+			box-shadow: 1px 1px 6px $black;
+			
+		}
+		
+		.imagebox {
+			
+			background-color: $offblack;
+			border: 2px solid $nearblack;
+			box-shadow: 1px 1px 6px $black;
+			
+			&:hover {
+				
+				border: 2px solid $offwhite;
+				
+			}
+			
+		}
+	
+	}
+	
+	&.light-mode {
+	
+	}
 	
 }

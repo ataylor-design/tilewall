@@ -5,9 +5,8 @@
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="resources/css/global.css">
-		<link rel="stylesheet" type="text/css" href="resources/css/index.css">
 	</head>
-	<body>
+	<body class="index dark-mode">
 		<main>
 			<?php include 'resources/php/get_images.php';?>
 		</main>
